@@ -1,0 +1,34 @@
+SELECT
+    zip,
+    MAX(maxtemperaturef) as max_temp
+FROM
+    weather
+GROUP by zip;
+
+
+
+SELECT
+    start_station,
+	COUNT(*) as total_trips
+FROM
+    trips
+GROUP BY start_station
+ORDER BY total_trips DESC;
+
+
+
+SELECT
+	MIN(duration)
+FROM
+    trips;
+
+
+
+SELECT
+	end_station,
+	AVG(duration) as avg_duration
+FROM
+    trips
+GROUP BY
+	end_station
+ORDER BY avg_duration DESC;
