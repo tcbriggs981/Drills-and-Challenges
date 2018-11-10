@@ -1,0 +1,72 @@
+-- Q NUMBER 1
+
+SELECT
+	tr.trip_id,
+	MAX(tr.duration)
+FROM 
+	weather w
+JOIN
+	trips tr
+ON
+	w.zip = tr.zip_code
+WHERE 
+	w.precipitationin > 0
+GROUP BY
+	1
+ORDER BY
+	MAX(tr.duration) DESC;
+
+
+-- Q NUMBER 2
+
+SELECT
+    status.station_id,
+	stations.name,
+	COUNT(*)
+FROM 
+    status
+JOIN
+	stations
+ON
+	status.station_id = stations.station_id
+WHERE
+	docks_available = 0
+GROUP BY 1,2;
+
+
+-- Q NUMBER 3
+
+SELECT
+	s.station_id,
+	s.name,
+	s.dockcount,
+	COUNT(tr.trip_id) as trip_count
+FROM 
+	stations s
+JOIN
+	trips tr
+ON
+	s.name = tr.start_station
+GROUP BY
+	1,2,3
+ORDER BY
+	s.dockcount DESC;
+
+
+-- Q NUMBER 4
+
+SELECT
+	w.date,
+	MAX(tr.duration) as longest_ride
+FROM 
+	weather w
+JOIN
+	trips tr
+ON
+	w.zip = tr.zip_code
+WHERE 
+	w.precipitationin > 0
+GROUP BY
+	1
+ORDER BY
+	MAX(tr.duration) DESC;
