@@ -54,6 +54,17 @@ WHERE available = 't'
 GROUP BY 1
 ORDER BY 2;
 
--- October is by far the busiest month of the year, with only 145803 available listings, followed by June & September.
--- The least busy month is March, with 282008 available listings.
+&
+
+SELECT 
+	EXTRACT(MONTH FROM calender_date),
+	COUNT(EXTRACT(MONTH FROM calender_date))
+FROM
+	calender
+WHERE available = 'f'
+GROUP BY 1
+ORDER BY 2 DESC;
+
+-- October is by far the busiest month of the year with only 145803 available listings & 390590 filled listings.
+-- The least busy month is March, with 282008 available listings and 254385 filled listings.
 
