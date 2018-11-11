@@ -1,0 +1,59 @@
+-- QUESTION 1
+
+SELECT * FROM listings
+ORDER BY price DESC
+LIMIT 20;
+
+-- The most expensive listing costs 9,999 it's ID is 27418553. It has 0 reviews and is available 359 days a year.
+-- To find a listing that actually gets rented, the next mos expensive is ID: 27503535. It costs $8652 and is available
+-- 179 days a year.
+
+
+-- QUESTION 2
+
+SELECT neighbourhood, COUNT(*) as total_listings , AVG(price) as average_price
+FROM listings
+GROUP BY neighbourhood
+ORDER BY 2 DESC;
+
+-- Embajadores, Universidad, Palacio, & Sol are by far the neighbourhoods with the most listings. I pulled in 
+-- average price as well to see if there was a correlation to amount of listings and the price but while none
+-- of them are cheap by any means, they are not quite the most expensive. Embajadores is the most listed neighbourhood
+-- and with an average price of $117, it might not be the smartest choice.
+
+
+-- QUESTION 3
+-- Most Expensive:
+
+SELECT 
+	EXTRACT(MONTH FROM ca.calender_date),
+	AVG(l.price)
+FROM
+	calender ca
+JOIN
+	listings l
+ON
+	ca.listing_id = l.id
+WHERE ca.available = 't'
+GROUP BY 1
+ORDER BY 2 DESC;
+
+-- October is the most expensive time of the year, followed by November and December
+-- June is the cheapest but the difference between January through September is marginal and the average price jumps
+-- up by $10 when you enter December.
+
+
+-- Busiest:
+
+SELECT 
+	EXTRACT(MONTH FROM calender_date),
+	COUNT(EXTRACT(MONTH FROM calender_date))
+FROM
+	calender
+WHERE available = 't'
+GROUP BY 1
+ORDER BY 2;
+
+-- October is by far the busiest month of the year, with only 145803 available listings, followed by June & September.
+-- The least busy month is March, with 282008 available listings.
+
