@@ -1,18 +1,59 @@
-Does a new supplement help people sleep better?
+Question:    Does a new supplement help people sleep better?
 
-In a test, you would test both the real pill and a placebo and have testers take the pill/placebo each night for a week. Record how many hours they sleep each night.
+Hypothesis:  The supplement helps people sleep longer and more effectively than if they were not on the supplement.
 
+Versions:    In the test, we will administer both the real supplement and a placebo.
 
-Will new uniforms help a gym's business?
+Sample:      We test a group of 500 people who have reported having issues sleeping. 
 
-Do a survey where you measure the general excitement for the team. In one version, include all photos to old uniforms and in another, use photos and references for the new uniforms
+Method:      Using a sleep-tracking watch we will track how many hours per night each tester sleeps, as well as the amount of
+             times each tester wakes up per night.
 
+Outcome:     We want to see if testers taking the real supplement on average have longer and less interrupted sleep.
 
-Will a new homepage improve my online exotic pet rental business?
+------
 
-Push live the old homepage and the new homepage and randomly direct users to each. Track the amount of time spent on page and if they're likely to make a rental.
+Question:    Will new uniforms help a gym's business?
 
+Hypothesis:  New uniforms will cause an initial surge in business 
 
-If I put 'please read' in the email subject will more people read my emails?
+Versions:    Track the business for 6 months or look back at old business sales/revenue data. Introduce the new uniforms then 
+             track the same data for another 6 months.
 
-Put 'please read' on 5 emails then no 'please read' on 5 emails, track the open rate of the emails
+Sample:      People who are making a purchase at the gym.
+
+Method:      Here we are tracking sales and comparing it before and after the new uniforms were introduced.
+
+Outcome:     An increase in sales / revenue would constitute a success here.
+
+------
+
+Question:    Will a new homepage improve my online exotic pet rental business?
+
+Hypothesis:  New uniforms will cause an initial surge in business 
+
+Versions:    We will randomly direct visitors to the site to either the new homepage or the old homepage.
+
+Sample:      Randomly directed site visitors over the period of 2 weeks.
+
+Method:      While users are on the homepage, we will track how long they spend there, what their next step is, and if they
+             ultimately make a purchase or not.
+
+Outcome:     The key variable we want to track is if a user makes a purchase or not but the others will help give us a sense
+             of the general effectiveness of the homepage as well.
+             
+------
+
+Question:    If I put 'please read' in the email subject will more people read my emails?
+
+Hypothesis:  Including 'please read' will increase the amount of people reading your emails
+
+Versions:    We send 5 emails with 'please read' and 5 without 'please read' at different times of day / days of the week
+
+Sample:      The sample will be your current mailing list
+
+Method:      we will track if an email is read, and if there is a CTA in the email, if that CTA was clicked.
+
+Outcome:     The CTA being clicked is the key variable we want to track, having your emails be opened is important to track
+             and an important variable but just because it was opened does not neccessarily meant it was read / acted upon.
+
